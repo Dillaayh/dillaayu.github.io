@@ -1,0 +1,81 @@
+:root {
+  --primary-color-dark: #c511e9;
+  --primary-color-light: #09010b;
+  --primary-transparent-dark-bg: rgba(163, 66, 66, 0.25);
+  --primary-transparent-light-bg: rgba(95, 72, 57, 0.65);
+  --primary-shadow: 0px 10px 15px 10px rgba(88, 71, 71, 0.15);
+}
+/* Tampilan umum */
+body {
+  background-color: var(--primary-color-dark);
+  color: var(--primary-color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color-light);
+}
+
+h2, h3, h4, h5 {
+  font-size: 20px;
+  color: var(--primary-color-light);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+button {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color-dark);
+  padding: 1px 2px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  color: var(--primary-color-light);
+  margin-bottom: 6px;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
+/* Tampilan untuk perangkat seluler dengan lebar maksimal 600px */
+@media (max-width: 600px) {
+  h2, h3, h4, h5 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}
+#task {
+  width: 100%;
+  max-width: 400px; /* Anda dapat menyesuaikan nilai maksimum sesuai kebutuhan */
+}
+
+#date {
+  width: 100%;
+  max-width: 400px; /* Anda dapat menyesuaikan nilai maksimum sesuai kebutuhan */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+

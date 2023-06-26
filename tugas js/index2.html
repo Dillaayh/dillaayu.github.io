@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <h1>ToDo App</h1>
+    <h2>Masukkan hal yang akan dilakukan</h2>
+    <input type="text" id="task" placeholder="Masukkan hal yang akan dilakukan">
+    <h3>Masukkan Tanggal</h3>
+    <input type="date" id="date">
+    <div class="button-container">
+        <button onclick="addTask()">Tambah</button>
+    </div>
+      
+    <i class="fas fa-trash"></i>
+    
+    <h3>Yang Akan Dilakukan</h3>
+    <table id="todoList">
+        <tr>
+            <th>Tugas</th>
+            <th>Tanggal</th>
+            <th>Aksi</th>
+        </tr>
+    </table>
+
+    <h4>Yang Sudah Dilakukan</h4>
+    <table id="completedList">
+        <tr>
+            <th>Tugas</th>
+            <th>Tanggal</th>
+            <th>Aksi</th>
+        </tr>
+    </table>
+
+    <script src="script2.js"></script>
+    <footer>
+        <h6>copyright© dilla ayu</h6>
+    </footer>
+</body>
+</html>
